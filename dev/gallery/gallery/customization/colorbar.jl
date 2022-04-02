@@ -6,5 +6,8 @@ draw(plt)
 
 fg = draw(plt, colorbar=(position=:top, size=25))
 
+plt = visual(Scatter, colormap=:thermal) * data(df) * mapping(:x, :y, color=:z)
+draw(plt)
+
 # This file was generated using Literate.jl, https://github.com/fredrikekre/Literate.jl
 
